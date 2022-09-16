@@ -13,6 +13,14 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body{
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+body.show-nav{
+    /* width of nav */
+    transform: translate(200px);
+}
 nav {
     background-color: var(--primary-color);
     border-right: 2px solid rgba(200, 200, 200, 0.1);
@@ -76,8 +84,7 @@ header p {
 }
  
 
- #btn,
-#close-menu-btn {
+ #btn {
     padding: 12px 15px;
     font-size: 16px;
     background-color: orchid;
@@ -86,6 +93,12 @@ header p {
     border-radius: 5px;
     border: 0;
 }
+/* #toggle {
+    background-color:rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+} */
 #btn:hover{
     opacity: 0.9;
 }
